@@ -1,23 +1,22 @@
 #page {
-    min-width: 450px;
-    min-height: 0
+    min-height: 0;
 }
 
 #menucontainer {
-    padding: 0
+    padding: 0;
 }
 
 #banner {
-    padding: 0
+    padding: 0;
 }
 
 #main {
     padding: 0;
-    min-height: 0
+    min-height: 0;
 }
 
 #footer {
-    padding: 0
+    padding: 0;
 }
 
 #funGrapher {
@@ -26,7 +25,7 @@
     overflow: hidden;
     font-size: 12px;
     padding-bottom: 0;
-    position: relative
+    position: relative;
 }
 
 #canvasWrapper {
@@ -35,7 +34,7 @@
     height: auto;
     overflow: visible;
     float: left;
-    position: relative
+    position: relative;
 }
 
 #canvas {
@@ -45,7 +44,7 @@
     overflow: hidden;
     position: relative;
     min-width: 300px;
-    min-height: 300px
+    min-height: 300px;
 }
 
 #loading {
@@ -55,19 +54,20 @@
     line-height: 100%;
     margin: 30px 0 0 30px;
     padding: 0 0 0 30px;
-    background: url('../../Images/loading.gif') no-repeat left center
+    background: url('/images/legacy/loading.gif') no-repeat left center;
 }
 
 #controls {
     float: right;
     width: 200px;
-    height: 100%;
+    height: 100% !important;
     position: absolute;
     right: 0;
     z-index: 10;
     overflow-x: hidden;
     overflow-y: visible;
-    padding: 5px
+    padding: 5px;
+    background-color: #EBEBEB;
 }
 
 #leftPanel {
@@ -77,7 +77,7 @@
     float: none;
     width: 100%;
     height: 100%;
-    overflow: hidden
+    overflow: hidden;
 }
 
 #leftPanel .title {
@@ -88,7 +88,7 @@
     z-index: 99;
     background-color: #f3f3f3;
     text-shadow: 1px 1px 5px rgba(100, 100, 100, .75);
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 .expressionLine {
@@ -101,7 +101,7 @@
     border-collapse: collapse;
     position: relative;
     margin-bottom: -1px;
-    font-size: smaller
+    font-size: smaller;
 }
 
 .expressionBox {
@@ -112,19 +112,19 @@
     height: auto;
     width: auto;
     max-width: 100%;
-    position: relative
+    position: relative;
 }
 
 .expressionBox span.mathquill-editable {
     width: 100%;
-    padding-right: 0;
     padding-left: 0;
     padding-right: 20px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    display: block;
 }
 
 .expressionBox span {
-    border: none
+    border: none;
 }
 
 .expressionBox .clear {
@@ -134,24 +134,24 @@
     cursor: pointer;
     width: 20px;
     height: 20px;
-    color: #ddd
+    color: #ddd;
 }
 
 .expressionBox .clear:hover {
-    color: #000
+    color: #000;
 }
 
 .error {
-    background-color: #fbb
+    background-color: #fbb;
 }
 
 #adZone {
-    float: left
+    float: left;
 }
 
 #mask-layer {
     position: static;
-    display: none
+    display: none;
 }
 
 #mask-layer .mask {
@@ -162,7 +162,7 @@
     top: 0;
     z-index: 999;
     background-color: #000;
-    opacity: .5
+    opacity: .5;
 }
 
 #mask-layer div.content {
@@ -174,7 +174,7 @@
     top: 0;
     width: 100%;
     padding: 1em 0;
-    z-index: 1000
+    z-index: 1000;
 }
 
 #mask-layer textarea#noop {
@@ -182,7 +182,7 @@
     height: 0;
     position: absolute;
     left: 0;
-    top: 0
+    top: 0;
 }
 
 #save-image-panel {
@@ -195,12 +195,12 @@
     width: 150px;
     padding: 5px;
     background-color: #fff;
-    border: solid 2px gray
+    border: solid 2px gray;
 }
 
 .canvas-image {
     position: absolute;
-    z-index: 1000
+    z-index: 1000;
 }
 
 .error-message-box {
@@ -214,29 +214,29 @@
     left: 15px;
     display: none;
     background-color: #fff;
-    padding: 5px 10px
+    padding: 5px 10px;
 }
 
 .active {
-    display: block
+    display: block;
 }
 
 .error-icon-box {
-    background: url('../../Images/error.png') no-repeat center center;
+    background: url('/images/legacy/error.png') no-repeat center center;
     width: 30px;
     height: 30px;
     position: absolute;
     right: 0;
     top: 0;
     z-index: 150;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .error-icon-box span {
     color: #ff0;
     font-size: 28px;
     line-height: 28px;
-    margin-top: -4px
+    margin-top: -4px;
 }
 
 .app-footer {
@@ -246,92 +246,92 @@
 
 .app-footer a:link {
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .app-footer a:visited {
     color: #fff;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .app-footer a:hover {
     color: #ff0;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 .app-footer a:active {
     color: #ff0;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 table.tbLikeGoogle {
     border: solid 1px #ccc;
     border-collapse: collapse;
     width: 99%;
-    background-color: #fff
+    background-color: #fff;
 }
 
 table.tbLikeGoogle tr {
-    border: solid 1px #ccc
+    border: solid 1px #ccc;
 }
 
 table.tbLikeGoogle tr:hover {
-    background-color: #f1fcff
+    background-color: #f1fcff;
 }
 
 table.tbLikeGoogle thead tr {
-    border-bottom: solid 1px #a6a6a6
+    border-bottom: solid 1px #a6a6a6;
 }
 
 table.tbLikeGoogle thead tr:hover {
     border-bottom: solid 1px #a6a6a6;
-    background-color: transparent
+    background-color: transparent;
 }
 
 table.tbLikeGoogle tr td {
     padding: 6px 0 6px 3px;
     border-top: solid 1px #ccc;
     border-bottom: solid 1px #ccc;
-    text-align: left
+    text-align: left;
 }
 
 table.tbLikeGoogle tr td a:link {
     padding: 0 !important;
     margin: 0 !important;
     color: #24d !important;
-    text-decoration: underline !important
+    text-decoration: underline !important;
 }
 
 table.tbLikeGoogle tr td a:link {
     padding: 0 !important;
     margin: 0 !important;
     color: #24d !important;
-    text-decoration: underline !important
+    text-decoration: underline !important;
 }
 
 table.tbLikeGoogle tr td a:link {
     padding: 0 !important;
     margin: 0 !important;
     color: #24d !important;
-    text-decoration: underline !important
+    text-decoration: underline !important;
 }
 
 table.tbLikeGoogle tr td a:link {
     padding: 0 !important;
     margin: 0 !important;
     color: #24d !important;
-    text-decoration: underline !important
+    text-decoration: underline !important;
 }
 
 table.tbLikeGoogle thead tr th {
     border-bottom: solid 1px #a6a6a6;
     text-align: left;
     padding: 6px 0 6px 3px;
-    vertical-align: top
+    vertical-align: top;
 }
 
 table.tbLikeGoogle thead tr th .filter {
-    font-weight: normal
+    font-weight: normal;
 }
 
 table.tbDoodles {
@@ -339,120 +339,120 @@ table.tbDoodles {
     border-collapse: collapse;
     width: auto;
     border: solid 1px #666;
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 table.tbDoodles caption {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 1em 0
+    margin: 1em 0;
 }
 
 table.tbDoodles col {
-    border-right: solid 1px #ccc
+    border-right: solid 1px #ccc;
 }
 
 table.tbDoodles col.LastCol, table.tbDoodles col.lastCol, table.tbDoodles col.lastColumn, table.tbDoodles col.LastColumn {
-    border: none
+    border: none;
 }
 
 table.tbDoodles th, table.tbDoodles td {
-    padding: .1em 1em
+    padding: .1em 1em;
 }
 
 table.tbDoodles .lastColCell {
-    border: none
+    border: none;
 }
 
 table.tbDoodles thead {
     background: #fff url(../images/bar.gif) repeat-x left center;
-    border-bottom: solid 1px #a5a5a5
+    border-bottom: solid 1px #a5a5a5;
 }
 
 table.tbDoodles th {
     font-weight: normal;
-    text-align: left
+    text-align: left;
 }
 
 table.tbDoodles #idListPostHead {
-    text-indent: -1000em
+    text-indent: -1000em;
 }
 
 table.tbDoodles .ListPostHead {
-    text-indent: -1000em
+    text-indent: -1000em;
 }
 
 table.tbDoodles .odd {
-    background-color: #edf5ff
+    background-color: #edf5ff;
 }
 
 table.tbDoodles tr:nth-child(odd) {
-    background-color: #edf5ff
+    background-color: #edf5ff;
 }
 
 table.tbDoodles thead tr:nth-child(odd) {
-    background-color: Transparent
+    background-color: Transparent;
 }
 
 table.tbDoodles tr.selected {
     background-color: #6fb3ff;
-    color: #fff
+    color: #fff;
 }
 
 table.tbDoodles tr:hover {
     background-color: #3d80df;
-    color: #fff
+    color: #fff;
 }
 
 table.tbDoodles thead tr:hover {
     background-color: Transparent;
-    color: inherit
+    color: inherit;
 }
 
 table.tbGridView {
     border-collapse: collapse;
-    border: solid 1px #000
+    border: solid 1px #000;
 }
 
 table.tbGridView th, table.tbGridView td {
     border: solid 1px #000;
-    padding: 5px 1em
+    padding: 5px 1em;
 }
 
 table.errorList {
     border-collapse: collapse;
-    border: solid 1px gray
+    border: solid 1px gray;
 }
 
 table.errorList caption {
     font-weight: bold;
     font-size: larger;
-    text-align: left
+    text-align: left;
 }
 
 table.errorList tr {
-    cursor: default
+    cursor: default;
 }
 
 table.errorList td, table.errorList th {
-    border: solid 1px gray
+    border: solid 1px gray;
 }
 
 table.errorList thead {
-    background-color: #ccc
+    background-color: #ccc;
 }
 
 table.errorList thead th, table.errorList thead td {
-    padding: 3px 10px
+    padding: 3px 10px;
 }
 
 table.errorList tbody tr:hover {
-    background-color: #eee
+    background-color: #eee;
 }
 
 table.errorList tbody tr:active, table.errorList tbody tr.selected {
     background-color: #33f;
-    color: #fff
+    color: #fff;
 }
 
 table.tbWin8Apps {
@@ -460,74 +460,74 @@ table.tbWin8Apps {
     border-collapse: collapse;
     width: auto;
     border: none;
-    border-spacing: 0
+    border-spacing: 0;
 }
 
 table.tbWin8Apps caption {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 1em 0
+    margin: 1em 0;
 }
 
 table.tbWin8Apps col {
-    border-right: solid 1px #ccc
+    border-right: solid 1px #ccc;
 }
 
 table.tbWin8Apps col.LastCol, table.tbWin8Apps col.lastCol, table.tbDoodles col.lastColumn, table.tbWin8Apps col.LastColumn {
-    border: none
+    border: none;
 }
 
 table.tbWin8Apps th, table.tbWin8Apps td {
-    padding: .1em 1em
+    padding: .1em 1em;
 }
 
 table.tbWin8Apps .lastColCell {
-    border: none
+    border: none;
 }
 
 table.tbWin8Apps thead {
     height: 30px;
-    color: #000
+    color: #000;
 }
 
 table.tbWin8Apps th {
     font-weight: bold;
-    text-align: left
+    text-align: left;
 }
 
 table.tbWin8Apps #idListPostHead {
-    text-indent: -1000em
+    text-indent: -1000em;
 }
 
 table.tbWin8Apps .ListPostHead {
-    text-indent: -1000em
+    text-indent: -1000em;
 }
 
 table.tbWin8Apps .odd {
-    background-color: #fee0ff
+    background-color: #fee0ff;
 }
 
 table.tbWin8Apps tr:nth-child(odd) {
-    background-color: #fee0ff
+    background-color: #fee0ff;
 }
 
 table.tbWin8Apps thead tr:nth-child(odd) {
-    background-color: Transparent
+    background-color: Transparent;
 }
 
 table.tbWin8Apps tr.selected {
     background-color: #6fb3ff;
-    color: #fff
+    color: #fff;
 }
 
 table.tbWin8Apps tr:hover {
     background-color: #421c52;
-    color: #fff
+    color: #fff;
 }
 
 table.tbWin8Apps thead tr:hover {
     background-color: Transparent;
-    color: inherit
+    color: inherit;
 }
 
 ﻿table.grid {
@@ -536,17 +536,17 @@ table.tbWin8Apps thead tr:hover {
     border: solid 1px #8ec5dc;
     empty-cells: show;
     font-family: Tahoma, Verdana, Arial, "Helvetica Neue", Helvetica, SimSun, Sans-Serif;
-    background-color: #fff
+    background-color: #fff;
 }
 
 table.grid caption {
     font-weight: bold;
-    margin: 1em 0 .1em 0
+    margin: 1em 0 .1em 0;
 }
 
 table.grid thead {
     background: #b6dff0 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAA0CAMAAAB8fKKlAAAAP1BMVEXK7/7F6/q95fW54fHC6fm44PC75PO23/DL7/7K7v2+5vXH7fzH7Py85fTJ7f3A5/e64vPJ7v3B6PjE6vrL8P5TyNMmAAAAK0lEQVR4Xp3BhRGAQAwAsPQd1/1nZQcuGF5wmewWqxAexe0wSzbNKav6Xx9XjwGYdKpf2wAAAABJRU5ErkJggg==') repeat-x 0 0;
-    color: #4d90aa
+    color: #4d90aa;
 }
 
 table.grid th, table.grid td {
@@ -555,46 +555,46 @@ table.grid th, table.grid td {
     white-space: normal;
     word-wrap: normal;
     word-break: normal;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
 }
 
 table.grid thead tr {
-    border-bottom: none
+    border-bottom: none;
 }
 
 table.grid thead tr th, table.grid thead tr td {
     border-top: none;
     border-bottom: none;
-    border-right: solid 1px #fff
+    border-right: solid 1px #fff;
 }
 
 table.grid thead tr th:last-child, table.grid thead tr td:last-child {
-    border-right: none
+    border-right: none;
 }
 
 table.grid tbody tr {
-    background: none
+    background: none;
 }
 
 table.grid tbody th, table.grid tbody td {
     border-bottom: dashed 1px #ccc;
-    border-right: dashed 1px #eee
+    border-right: dashed 1px #eee;
 }
 
 table.grid tbody th:last-child, table.grid tbody td:last-child {
-    border-right: none
+    border-right: none;
 }
 
 table.grid tbody tr:last-child th, table.grid tbody tr:last-child td {
-    border-bottom: none
+    border-bottom: none;
 }
 
 table.grid col {
-    border-right: dashed 1px #eee
+    border-right: dashed 1px #eee;
 }
 
 table.grid col:last-child {
-    border-right: none
+    border-right: none;
 }
 
 table.layout-table {
@@ -605,25 +605,44 @@ table.layout-table td {
 }
 
 .table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {
-    background-color: #f9f9f9
+    background-color: #f9f9f9;
 }
 
 .table-hover tbody tr:hover > td, .table-hover tbody tr:hover > th {
-    background-color: #f5f5f5
+    background-color: #f5f5f5;
 }
 
 .table-hover tbody tr.success:hover > td {
-    background-color: #d0e9c6
+    background-color: #d0e9c6;
 }
 
 .table-hover tbody tr.error:hover > td {
-    background-color: #ebcccc
+    background-color: #ebcccc;
 }
 
 .table-hover tbody tr.warning:hover > td {
-    background-color: #faf2cc
+    background-color: #faf2cc;
 }
 
 .table-hover tbody tr.info:hover > td {
-    background-color: #c4e3f3
+    background-color: #c4e3f3;
+}
+
+.link-button, a.link-button {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 5px 10px 5px 10px;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #777;
+    border-left: 1px solid #aaa;
+    font-family: Arial;
+    font-size: 13px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-top: 2px;
+    cursor: pointer;
+    box-sizing: border-box;
 }

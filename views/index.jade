@@ -2,33 +2,36 @@ extends layout
 
 block meta
     title #{__('趣涂在线函数画图 - 小巧灵活的在线绘图应用，支持隐函数作图！')}
-    link(rel="stylesheet", type="text/css", href="http://zizhujy.com/Content/appLayoutStyles?v=YOue5DkMQTcbkxU7m6FaqoOiDh4OMjsm_GbN2lzJ5bw1")
-    script(src="http://zizhujy.com/Scripts/Common/js?v=wztUINjeJi9Q5oBY5DDU3r9M9k5inQ6sbfX-OhDNCxc1")
+    link(rel="stylesheet", type="text/css", href="/stylesheets/legacy/appLayoutStyles.css")
+    script(src="/javascripts/legacy/common.js")
     meta(name="keywords", content="#{__('函数涂鸦板, 涂鸦板, 函数作图, 函数作图器, 作图器, 图形, 在线画图, 在线作图, 在线函数作图器, 2维函数图形, 图形计算器,隐函数作图')}")
     meta(name="description", content="#{__('在线函数画图。这是一款小巧灵活的在线函数作图工具，多函数支持，而且能够作出隐函数图像！支持 LaTex 表达式，还可以用作在线公式编辑器、图形计算器。')}")
     link(rel="stylesheet", type="text/css", href="/stylesheets/legacy/FunGrapherStyles.css")
-    link(rel="stylesheet", type="text/css", href="http://zizhujy.com/Content/css/iconfontsFico.css")
-    link(rel="stylesheet", type="text/css", href="http://zizhujy.com/Scripts/mathquill/mathquill.css?minify=true")
+    link(rel="stylesheet", type="text/css", href="/stylesheets/legacy/iconfontsFico.css")
+    link(rel="stylesheet", type="text/css", href="/stylesheets/legacy/mathquill/mathquill.css")
     include compatibility/ie.html
-    script(src="http://zizhujy.com/Scripts/FunctionGrapher/js?v=XTauvMoq3M4pxMyz7nzeKqPR2WQOLvT5fRvd2-tfI_A1")
-    script(src="http://zizhujy.com/Scripts/FunctionGrapher/FunctionGrapherNew.js")
-    script(src="/javascripts/globalize.js")
-    script(src="http://zizhujy.com/Scripts/flot/jquery.flot.menuBar.js")
+    script(src="/javascripts/legacy/function-grapher.js")
+    script(src="/javascripts/legacy/function-grapher-new.js")
+    script(src="/javascripts/legacy/globalize.js")
+    script(src="/javascripts/legacy/jquery.flot.menuBar.js")
 
 block content
     div(class="page")
         div(id="main")
             div(id="app")
-                zizhujy(pageId="Home")
                 div(id="funGrapher")
                     div(id="canvasWrapper")
                         div(id="canvas")
                             div(id="loading")
                                 | 正在加载中……就快出来了！^_^
+                    button(type="button", class="button hide link-button", for="#control-panel", accesskey="<", onclick="$('#controls').show();$(this).hide()", style="display: none; position: absolute; right: 0; top: 0; right: 20px;")
+                        span(class="icon-left")
                     div(id="controls")
                         div(id="leftPanel")
                             div(class="title")
                                 label(for="taFunctionList", style="float: left;")
+                                    button(type="button", class="button hide link-button", for="#control-panel", accesskey=">", onclick="$('#controls').hide();$('.button.hide.link-button').show();")
+                                        span(class="icon-right")
                                     | 请输入函数表达式：
                                 span(style="float: left;")
                                     | (
@@ -37,7 +40,6 @@ block content
                                     | )
                                 input(type="button", style="float: right;", id="btnClearAll", value="×", title="清除全部")
                                 div(class="clearFloat")
-                                div(class="placeHolder", style="height: 30px;")
                                 div(class="expressionLine")
                                     div(id="taExpression3", class="expressionBox")
                                         span(class="mathquill-editable")
@@ -50,7 +52,7 @@ block content
                                 div(class="clearFloat")
                                 div(class="app-footer")
                                     span(style="float: left; width: 72px; overflow: hidden; display: inline-block; padding: 0; margin: 0;")
-                                        a(href="zh-CNHomeAbout?srcbaiduApp", target="_blank")
+                                        a(href="https://github.com/Jeff-Tian", target="_blank")
                                             | 作者
                                     span(style="float: right; width: 468px; display: inline-block; padding: 0; margin: 0;")
                                 div(id="mask-layer")
