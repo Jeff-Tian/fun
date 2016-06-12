@@ -10,7 +10,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-require('localeHelper')(app);
+require('localeHelper')(app, __dirname);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -23,7 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
-app.use(express.static(path.join(__dirname, 'public')));
+require('express-static')(app, __dirname);
 
 app.use('/', routes);
 app.use('/users', users);
